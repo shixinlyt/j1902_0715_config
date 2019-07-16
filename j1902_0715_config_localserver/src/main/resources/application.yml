@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  cloud:
+    config:
+      #配置访问失效的处理决策     配置索取不到时快速结束
+      fail-fast: true
+      server:
+        native:
+          search-locations: classpath:shared
+  profiles:
+    active: native        #设置搜索开发配置
