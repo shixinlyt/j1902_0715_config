@@ -12,6 +12,6 @@ public class MakeConfigController {
     private String port;
     @RequestMapping("/myname")
     public String showName(){
-        return "myname++***********::"+name+"port**::"+port;
+        return "myname++***********=====::"+name+"port**::"+port;
     }
 }
